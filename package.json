@@ -1,6 +1,6 @@
 {
 	"name": "dead-simple-typescript-pubsub",
-	"version": "0.0.3",
+	"version": "1.0.0",
 	"description": "An implementation of the observer pattern, in this case the publish subscribe model",
 	"main": "./dist/index.js",
 	"scripts": {
