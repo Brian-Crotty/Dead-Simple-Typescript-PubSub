@@ -1,0 +1,39 @@
+{
+	"name": "dead-simple-typescript-pubsub",
+	"version": "0.0.3",
+	"description": "An implementation of the observer pattern, in this case the publish subscribe model",
+	"main": "./dist/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Brian-Crotty/Dead-Simple-Typescript-PubSub.git"
+	},
+	"keywords": [
+		"pubsub",
+		"observer",
+		"pattern",
+		"typescript",
+		"ts",
+		"simple"
+	],
+	"author": "Brian Crotty",
+	"license": "Unlicense",
+	"bugs": {
+		"url": "https://github.com/Brian-Crotty/Dead-Simple-Typescript-PubSub/issues"
+	},
+	"homepage": "https://github.com/Brian-Crotty/Dead-Simple-Typescript-PubSub#readme",
+	"devDependencies": {
+		"@types/google-apps-script": "^1.0.33",
+		"@typescript-eslint/eslint-plugin": "^4.25.0",
+		"@typescript-eslint/parser": "^4.25.0",
+		"eslint": "^7.27.0",
+		"eslint-config-xo": "^0.36.0",
+		"eslint-config-xo-typescript": "^0.41.1",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-unicorn": "^32.0.1",
+		"prettier": "^2.3.0",
+		"typescript": "^4.2.4"
+	}
+}
