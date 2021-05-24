@@ -18,7 +18,7 @@
   
 ## About the Project
 
-<!-- TODO: explain the project -->
+A simple implementation of the Observer pattern with type safety!
 
 ### Built With
 
