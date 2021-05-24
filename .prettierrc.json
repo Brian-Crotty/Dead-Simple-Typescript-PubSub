@@ -1,0 +1,8 @@
+{
+	"tabWidth": 4,
+	"useTabs": true,
+	"endOfLine": "auto",
+	"quoteProps": "consistent",
+	"singleQuote": true,
+	"printWidth": 85
+}

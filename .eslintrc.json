@@ -1,0 +1,28 @@
+{
+	"root": true,
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": ["xo", "xo-typescript"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 12,
+		"project": ["**/tsconfig.json"]
+	},
+	"plugins": ["@typescript-eslint"],
+	"rules": {
+		"arrow-parens": ["warn", "always"],
+		"no-mixed-spaces-and-tabs": ["warn", "smart-tabs"],
+		"no-multiple-empty-lines": ["error", { "max": 2, "maxBOF": 3 }],
+		"no-useless-return": "off",
+		"@typescript-eslint/prefer-readonly-parameter-types": "warn",
+		"@typescript-eslint/no-unused-vars-experimental": "error",
+		"@typescript-eslint/consistent-type-imports": "error",
+		"@typescript-eslint/no-confusing-void-expression": [
+			"error",
+			{ "ignoreArrowShorthand": true }
+		],
+		"@typescript-eslint/object-curly-spacing": ["error", "always"]
+	}
+}
