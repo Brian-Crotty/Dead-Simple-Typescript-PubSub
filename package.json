@@ -6,13 +6,12 @@
 	"source": "./src/index.ts",
 	"exports": "./dist/index.modern.js",
 	"main": "./dist/index.cjs",
-	"module": "./dist/index.module.js",
+	"module": "./dist/index.m.js",
 	"unpkg": "./dist/index.umd.js",
 	"typings": "./dist/index.d.ts",
 	"scripts": {
-		"build": "microbundle --compress",
-		"dev": "microbundle watch",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"build": "microbundle",
+		"dev": "microbundle watch"
 	},
 	"repository": {
 		"type": "git",
