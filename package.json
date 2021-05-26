@@ -15,7 +15,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Brian-Crotty/Dead-Simple-Typescript-PubSub.git"
+		"url": "git+https://github.com/illumincrotty/Dead-Simple-PubSub.git"
 	},
 	"keywords": [
 		"pubsub",
@@ -28,9 +28,9 @@
 	"author": "Brian Crotty",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/Brian-Crotty/Dead-Simple-Typescript-PubSub/issues"
+		"url": "https://github.com/illumincrotty/Dead-Simple-PubSub/issues"
 	},
-	"homepage": "https://github.com/Brian-Crotty/Dead-Simple-Typescript-PubSub#readme",
+	"homepage": "https://github.com/illumincrotty/Dead-Simple-PubSub#readme",
 	"devDependencies": {
 		"@types/google-apps-script": "^1.0.33",
 		"@typescript-eslint/eslint-plugin": "^4.25.0",
