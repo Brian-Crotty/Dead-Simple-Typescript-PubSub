@@ -4,10 +4,10 @@
 <img src="./logo.png" alt="logo" width="200"/>
 
 <!-- Shields -->
-![license-badge](https://img.shields.io/github/license/Brian-Crotty/Dead-Simple-Typescript-PubSub)
-![last-update-badge](https://img.shields.io/github/last-commit/Brian-Crotty/Dead-Simple-Typescript-PubSub)
-![size-badge](https://badgen.net/badgesize/brotli/Brian-Crotty/Dead-Simple-Typescript-PubSub/main/src/index.ts)
+[![npm](https://img.shields.io/npm/l/dead-simple-pubsub.svg)](https://www.npmjs.org/package/dead-simple-pubsub)
+![size-badge](https://img.badgesize.io/https:/unpkg.com/dead-simple-pubsub/dist/index.modern.js?compression=brotli)
 ![dependency-count-badge](https://badgen.net/bundlephobia/dependency-count/dead-simple-pubsub)
+![Types](https://badgen.net/npm/types/dead-simple-color-picker)
 
 - [Dead Simple Typescript PubSub](#dead-simple-typescript-pubsub)
   - [About the Project](#about-the-project)
@@ -21,7 +21,7 @@
   
 ## About the Project
 
-A simple implementation of the Observer pattern with type safety! It's also dependency free and very light. The largest option in the distribution is the UMD package at **228 Bytes** after brotli, and the smallest is the modern ESM package at *jaw dropping* **143 Bytes** after brotli.
+A simple implementation of the Observer pattern with type safety! It's also dependency free and very light. The largest option in the distribution is the UMD package at **228 Bytes** after brotli, and the smallest is the modern ESM package at *jaw dropping* **153 Bytes** after brotli.
 
 ## Install
 
