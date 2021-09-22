@@ -136,4 +136,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Find me [@Brian-Crotty](https://github.com/Brian-Crotty) on github or [@illumincrotty](https://twitter.com/illumincrotty) on twitter
+Find me [@illumincrotty](https://github.com/illumincrotty) on github or [@illumincrotty](https://twitter.com/illumincrotty) on twitter
