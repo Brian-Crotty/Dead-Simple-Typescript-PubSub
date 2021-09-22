@@ -36,7 +36,7 @@ npm i dead-simple-pubsub
 #### PNPM <!-- omit in TOC -->
 
 ```sh
-pnpm i dead-simple-pubsub
+pnpm add dead-simple-pubsub
 ```
 
 #### Yarn <!-- omit in TOC -->
