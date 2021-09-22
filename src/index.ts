@@ -1,34 +1,43 @@
-/** A type safe implementation of the observer pattern
- * @type  {validParams} the type that the pubsub will handle
+/**
+ * A type safe implementation of the observer pattern
+ *
+ * @template validParameters - the type of events this pubsub functions on
  */
-class PubSub<validParams> {
-	readonly eventSubscribers: Set<(arg: validParams) => unknown> = new Set();
+class PubSub<validParameters> {
+	private readonly _subscribers: Set<(argument: validParameters) => unknown> =
+		new Set();
 
-	/** Adds a function that accepts the pubsub parameters to the subscriber list
-	 * @param  {(event:validParams)=>unknown} fn
-	 * @returns {Function} unsubscribe function
+	/**
+	 * Adds a function that accepts the pubsub parameters to the subscriber list
+	 *
+	 * @param subFunction - a subscriber to the event
+	 * @returns unsubscribe function
 	 */
-	subscribe(fn: (event: validParams) => unknown): () => void {
-		this.eventSubscribers.add(fn);
+	subscribe = (
+		subFunction: (event: validParameters) => unknown
+	): (() => void) => {
+		this._subscribers.add(subFunction);
 		return () => {
-			this.unsubscribe(fn);
+			this.unsubscribe(subFunction);
 		};
-	}
+	};
 
-	/** Unsubscribes the given function from the pubsub
-	 * @param  {(event:validParams)=>unknown} fn a function that was subscirbed to this pubsub
-	 * @returns {boolean} Deletion success status
+	/**
+	 * Unsubscribes the given function from the pubsub
+	 *
+	 * @param subFunction -  a function that was subscribed to this pubsub
+	 * @returns Deletion success status
 	 */
-	unsubscribe(fn: (event: validParams) => unknown): boolean {
-		return this.eventSubscribers.delete(fn);
-	}
+	unsubscribe = (subFunction: (event: validParameters) => unknown): boolean =>
+		this._subscribers.delete(subFunction);
 
-	/** Updates each of the subscribed functions with the published event
-	 * @param  {validParams} event
-	 * @returns void
+	/**
+	 * Updates each of the subscribed functions with the published event
+	 *
+	 * @param event - an update for the subscribers
 	 */
-	publish(event: validParams): void {
-		this.eventSubscribers.forEach((fn) => fn(event));
-	}
+	publish = (event: validParameters): void => {
+		for (const function_ of this._subscribers) function_(event);
+	};
 }
 export { PubSub };
